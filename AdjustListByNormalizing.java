@@ -22,7 +22,13 @@ public class AdjustListByNormalizing {
             highestValue = inputValues[i];
         }
       }
-      System.out.println("Highest value: " + highestValue);;
+      System.out.println("Highest value: " + highestValue);
+
+      for(int i = 0; i < inputValues.length; ++i){
+        inputValues[i] = inputValues[i] / highestValue;
+        System.out.println("Values divided by highest value: " + inputValues[i]);
+
+      }
 
 
       scnr.close();

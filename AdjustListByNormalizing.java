@@ -13,8 +13,18 @@ public class AdjustListByNormalizing {
       for(int i = 0; i < NUM_ELEMENTS; ++i){
         inputValues[i] = scnr.nextDouble();
         System.out.println(inputValues[i]);
-
       }
+      
+      double highestValue = inputValues[0];
+
+      for(int i = 0; i < inputValues.length; ++i) {
+        if(inputValues[i] > highestValue) {
+            highestValue = inputValues[i];
+        }
+      }
+      System.out.println("Highest value: " + highestValue);;
+
+
       scnr.close();
    }
 }
